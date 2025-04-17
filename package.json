@@ -1,0 +1,58 @@
+{
+	"name": "normalize-notion-database",
+	"version": "0.0.0",
+	"description": "Get country information via currency code",
+	"keywords": [
+		"normalize-notion-database"
+	],
+	"repository": "rocktimsaikia/normalize-notion-database",
+	"funding": "https://github.com/sponsors/rocktimsaikia",
+	"license": "MIT",
+	"author": {
+		"name": "Rocktim Saikia",
+		"email": "rocktimthedev@gmail.com",
+		"url": "https://rocktimsaikia.dev"
+	},
+	"type": "module",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"lint": "biome lint .",
+		"lint:fix": "biome lint --write .",
+		"format": "biome format --write .",
+		"release": "pnpm build && np",
+		"test": "vitest"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
+		"@types/node": "^20.17.12",
+		"notion-types": "^7.3.0",
+		"tsup": "^8.3.5",
+		"tsx": "^4.19.2",
+		"typescript": "^5.7.3",
+		"vitest": "^2.1.8"
+	},
+	"packageManager": "pnpm@10.7.0",
+	"engines": {
+		"node": ">=18"
+	},
+	"tsup": {
+		"entry": [
+			"src/index.ts"
+		],
+		"format": [
+			"cjs",
+			"esm"
+		],
+		"minify": true,
+		"clean": true,
+		"dts": true
+	},
+	"dependencies": {
+		"camelcase": "^8.0.0"
+	}
+}
