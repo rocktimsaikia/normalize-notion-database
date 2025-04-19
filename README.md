@@ -1,7 +1,7 @@
 # normalize-notion-database
 
-A lightweight utility to normalize Notion database entries into a simple, usable format. \
-It is specifically built to work with data retrieved using the `@notionhq/client` package.
+A lightweight utility to normalize Notion database entries into a simple key-value object. \
+It is specifically built to work with data retrieved using the [`@notionhq/client`](https://www.npmjs.com/package/@notionhq/client) package.
 
 [![CI](https://github.com/rocktimsaikia/normalize-notion-database/actions/workflows/main.yml/badge.svg)](https://github.com/rocktimsaikia/normalize-notion-database/actions/workflows/main.yml) [![npm](https://img.shields.io/npm/v/normalize-notion-database?color=brightgreen)](https://www.npmjs.com/package/normalize-notion-database)
 
@@ -35,7 +35,7 @@ const notion = new Client({
 
 // 2. Query the Notion database.
 const database = await notion.databases.query({
-	database_id: process.env.NOTION_DATABASE_ID_PROJECTS,
+	database_id: process.env.NOTION_DATABASE_ID,
 });
 
 // 3. Normalize the data into a usable format.

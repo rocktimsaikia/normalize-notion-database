@@ -1,7 +1,7 @@
 {
 	"name": "normalize-notion-database",
 	"version": "1.0.0",
-	"description": "Get country information via currency code",
+	"description": "Normalize Notion database entries into a simple key-value object",
 	"keywords": [
 		"normalize-notion-database"
 	],
