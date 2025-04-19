@@ -1,6 +1,6 @@
 {
 	"name": "normalize-notion-database",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Normalize Notion database entries into a simple key-value object",
 	"keywords": [
 		"normalize-notion-database"
